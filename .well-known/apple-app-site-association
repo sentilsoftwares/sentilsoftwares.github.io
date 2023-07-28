@@ -1,0 +1,18 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "com.senthil.TestWebExt1" ],
+             "components": [               
+               {
+                  "/": "/open-testwebext1/*",
+                  "comment": "Matches any URL with a path that starts with /open-testwebext1/."
+               }
+             ]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "com.senthil.TestWebExt1" ]
+   }
+}
