@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYTRACKS WEB-USB FILE UPLOADER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main-ui.js"></script>	
+</head>
+<body>
+
+<div class="container">
+  <h1 class="title">Mytracks web-usb file uploader</h1>
+  <div class="line"></div>
+  <h2 class="subtitle">File type: Instruments</h2>
+  <h2 class="subtitle">File name: myTRACKS Mega Mix Feb 2025</h2>
+
+  <div class="instruction-container">
+    <div class="instruction">1. Connect the myTRACKS to your computer using a USB cable.</div>
+    <div class="instruction">2. Turn off the myTRACKS.</div>
+    <div class="instruction">3. Hold down the top two buttons on the left side of the PLAY PAD (drums track and Track 1).</div>
+    <div class="instruction">4. Keep pressing the two buttons then tap the on button once. The buttons will glow blue as pictured. </div>
+    <div></div>
+    <img src="device_img.png" alt="Device buttons" class="image">
+    <div class="instruction">The rest of the upload process will take place on the computer.</div>
+    <div class="instruction">1. Click the buttons below in order, starting with “SEARCH FOR MYTRACKS”.</div>
+    <div class="instruction">2. As soon as you see “myTRACKS found”, click “CONNECT TO MYTRACKS”.</div>
+    <div class="instruction">3. As soon as you see “myTRACKS connected”, click “UPLOAD FILE”.</div>
+    <div class="instruction">4. The progress bar will show percentage complete, then “File Upload Complete”.</div>
+    <div class="instruction">5. Restart the myTRACKS to start exploring the new sounds.</div>
+  </div>  
+
+  <div class="button-container">
+    <div class="button-with-text">  
+        <button class="button" id="buttonSearchDevice">Search for myTRACKS</button>
+        <div class="status-text" id="textSearchStatus">myTRACKS found</div>
+    </div>
+    <div class="button-with-text">
+        <button class="button" id="buttonConnectDisconnect">Connect to myTRACKS</button>
+        <div class="status-text" id="textConnectionStatus">myTRACKS Connected</div>
+    </div>
+    
+    <div class="upload-progress-and-status-container">
+        <div class="progress-container">
+            <button class="button" id="buttonUploadFile">Upload file</button>
+            <div class="progress-bar" id="progressbarUpload">
+              <div class="progress-bar-fill" id="progressBarFillUpload"></div>
+            </div>
+        </div>
+        <div class="status-text-below" id="textUploadStatus">File Upload Complete, restart myTRACKS.</div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="instruction" id="textContactSupport">Did you get an error message or see blinking red lights on restart? Click <a href="https://blipblox.com/pages/upload-debug-instructions">here</a> for help.</div>    
+    </div>
+</div>
+
+</body>
+</html>

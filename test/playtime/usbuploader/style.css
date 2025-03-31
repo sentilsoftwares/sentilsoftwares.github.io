@@ -1,0 +1,121 @@
+.container {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 800px; /* Adjust maximum width as needed */
+    background-color: #ffffff;
+    padding: 20px;
+    padding-left: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left inside the container */
+  }
+  body {
+    font-family: 'Dosis';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh;
+    padding-top: 20px; /* Padding at the top of the page */
+  }
+
+.line {
+    width: 55px; /* Length of the line */
+    height: 5px; /* Height of the line */
+    background-color: #6BF4FD; /* Color of the line */
+    margin: auto;
+    margin-top: 0px;
+}
+
+  .button-container {
+    margin-top: 20px;
+  }
+  .instruction-container {
+    margin-top: 40px;
+  }
+  .title, .subtitle {
+    font-family: 'Dosis', sans-serif;
+    color: #7b59c7;
+    text-transform: uppercase;
+    text-align: center; /* Center the titles */
+    margin: 10px 0;
+  }
+  .instruction {
+    margin: 5px 0; /* Reduced margin for top and bottom of each instruction */
+  }
+  .button {
+    background-color: #7b59c7;
+    border: 2px solid #534588;
+    color: #FFFFFF;
+    font-family: 'Dosis', sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 10px 0;
+    display: block;
+    width: 250px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    margin: 10px 0; /* Margin for top and bottom */
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  .image {
+    display: block;
+    margin-top: 20px; /* Increased top margin for more space above the image */
+    margin-bottom: 20px; /* Existing bottom margin for space below the image */
+    margin-left: 10px; /* Align image to the left */
+    max-width: 100%; /* Responsive image */
+  }
+  
+  .button-with-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .status-text {
+    margin-left: 20px; /* Spacing between the button and the text */
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+.upload-progress-and-status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  margin: 0px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  margin-top: 0px;
+  width: 220px;
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  height: 18px;
+  overflow: hidden;
+  border: 1px solid lightgray; /* Border for progress bar */
+}
+
+.progress-bar-fill {
+  background-color: #6BF4FD;
+  height: 100%;
+  width: 0%; /* Initial state of the progress bar */
+  transition: width 0.5s ease-in-out;
+}
+
+.status-text-below {
+  margin-top: -10px; /* Space above the status text */
+  margin-left: 270px; /* Align left with progress bar */
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.footer-container {
+    margin-top: 30px;
+}
