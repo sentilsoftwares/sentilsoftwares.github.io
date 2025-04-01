@@ -36,26 +36,16 @@ function onMIDISuccess(midiAccess) {
 	
 	inputPorts = Array.from(midiAccess.inputs.values());
 	numberOfInputPorts = inputPorts.length;
-	for (let i = 0; i < numberOfInputPorts; i++) {
-		console.log(inputPorts[i].id);
-		console.log(inputPorts[i].manufacturer);
-		console.log(inputPorts[i].name);
-		console.log(inputPorts[i].type);
-		console.log(inputPorts[i].version);
-		console.log(inputPorts[i].state);
-		console.log(inputPorts[i].connection);
+	console.log("Number of input ports: ", numberOfInputPorts);
+	for (let i = 0; i < numberOfInputPorts; i++) {		
+		console.log(`Port id: ${inputPorts[i].id}, Manufacturer: ${inputPorts[i].manufacturer}, Name: ${inputPorts[i].name}, Type: ${inputPorts[i].type}, Version: ${inputPorts[i].version}, State: ${inputPorts[i].state}, Connection: ${inputPorts[i].connection}`);
 	}
 	
 	outputPorts = Array.from(midiAccess.outputs.values());
 	numberOfOutputPorts = outputPorts.length;
+	console.log("Number of output ports: ", numberOfOutputPorts);
 	for (let i = 0; i < numberOfOutputPorts; i++) {
-		console.log(outputPorts[i].id);
-		console.log(outputPorts[i].manufacturer);
-		console.log(outputPorts[i].name);
-		console.log(outputPorts[i].type);
-		console.log(outputPorts[i].version);
-		console.log(outputPorts[i].state);
-		console.log(outputPorts[i].connection);
+		console.log(`Port id: ${outputPorts[i].id}, Manufacturer: ${outputPorts[i].manufacturer}, Name: ${outputPorts[i].name}, Type: ${outputPorts[i].type}, Version: ${outputPorts[i].version}, State: ${outputPorts[i].state}, Connection: ${outputPorts[i].connection}`)
 	}
 	
 	midiAccess.onstatechange = function(e) {
