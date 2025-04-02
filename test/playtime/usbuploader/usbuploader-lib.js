@@ -72,7 +72,7 @@ function EnumeratePorts() {
 
 async function WriteToPort(port, abyDataBuffer) {
 	if (port) {
-		port.send(abyDataBuffer);
+		await port.send(abyDataBuffer);
 	}
 }
 
